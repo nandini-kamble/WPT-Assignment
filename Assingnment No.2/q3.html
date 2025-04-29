@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width" initial-scale = 1.0>
+<title>Assignment no 2 Q3</title>
+
+<html>
+<head>
+<style>
+
+*
+{
+    text-align: center;
+    margin: 20px;
+    background-color: thistle;
+}
+
+#pleaseselect
+{
+   padding: 10px; 
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   color: white;
+   border: 0;
+   background-color: violet;
+}
+
+#btnRemove
+{
+    font-size: 16px;
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: violet;
+    border: 0;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+</style>
+
+</head>
+
+    <body>
+
+        <p style="font-size: 18px;  margin-top: 150px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Please Choose An Option:</p>
+
+      <select id = "pleaseselect">
+
+        <option>Royal Challengers Banglore</option>
+        <option>Kolkata Knight Riders</option>
+        <option>Mumbai Indians</option>
+        <option>Chennai Super Kings</option>
+        <option>Sunrisers Hyderabad</option>
+
+      </select>
+
+      <div>
+
+        <input type="button" id = "btnRemove" onclick="removeColor()" value="Select And Remove">
+      </div>
+
+        <script>
+
+         function removeColor()
+         {
+          var one = document.getElementById('pleaseselect');
+          one.remove(one.selectedIndex);   
+              }
+        </script>
+
+    </body>
+
+</html>
+
