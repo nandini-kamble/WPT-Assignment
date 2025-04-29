@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width" initial-scale = 1.0>
+<title>Assignment no 2 Q1</title>
+
+<html>
+
+<head>
+
+    <style>
+        
+     *{
+        margin: 20px;
+        background-color:aliceblue;
+     }
+
+     button
+     {
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:seagreen;
+    border: 0;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+     }
+     
+    </style>
+
+</head>
+
+<body>
+
+    <p id = "text" style="background-color:beige; padding: 16px; border-style: groove;"></p>
+
+    <button id = "jsstyle" onclick="js_style()">Click Here</button>
+
+    <script>
+
+        document.getElementById("text").innerHTML = " Atoms of radioactive elements can split. According to Albert Einstein, mass and energy are interchangeable under certain circumstances.  When atoms split, the process is called nuclear fission. In this case, a small amount of mass is converted into energy. Thus the energy released cannot do much damage. However, several subatomic particles called neutrons are also emitted during this process.Each neutron will hit a radioactive element releasing more neutrons in the process. This causes a chain reaction and creates a large amount of energy.  This energy is converted into heat which expands uncontrollably causing an explosion. Hence, atoms do not literally explode.They generate energy that can cause explosions.";
+
+        function js_style()
+        {
+            text.style.fontSize = "16pt";
+            text.style.fontFamily = "Comic Sans MS";
+            text.style.color = "green";
+        }
+    </script>
+
+</body>
+
+</html>
+
