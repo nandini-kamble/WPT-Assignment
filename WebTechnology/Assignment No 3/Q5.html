@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+
+function fetchData(url , callBack)
+{
+setTimeout(() => {
+const data = `Response from ${url}`;
+callBack(null,data);
+} , 1000);
+}
+
+function processData(data , callBack)
+{
+    setTimeout (() => {
+
+        const ProcessesData = `Response from ${data} processed`; 
+        callBack(null,ProcessesData);
+    } , 1000);
+}
+
+fetchData("https://medium.com/@tonyparkerkenz/callback-and-anonymous-functions-in-javascript-8849d57f5ce9"
+
+, (err , data)=> {
+    if(err)
+{
+console.error(err);
+}
+else
+{
+console.log(data);
+processData(data ,(err , processData)=>{
+    if(err)
+    {
+console.error(err);
+    }
+    else
+    {
+        console.log(processData);
+    }
+})
+} 
+});
+
+        </script>
+    </body>
+</html>

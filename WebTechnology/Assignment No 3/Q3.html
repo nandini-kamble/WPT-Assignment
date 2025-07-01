@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+    <script>
+
+    function fetchData(url , callBack)
+    {
+      setTimeout(() =>
+       {
+       const data = `Response from ${url}`;
+       callBack(data);
+      },2000);
+    }
+
+    fetchData("https://medium.com/@tonyparkerkenz/callback-and-anonymous-functions-in-javascript-8849d57f5ce9"
+    ,(response) => {
+        console.log(response); 
+    });
+    </script>
+
+</body>
+
+</html>
